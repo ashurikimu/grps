@@ -1,0 +1,20 @@
+.center{
+    display: flex;
+    width: 160px;
+    height: 40px;
+    margin: auto;
+    margin-top: 300px;
+    margin-left: 700px;
+    /* background-color: pink; */
+    
+}
+
+.center p {
+    background-color: rgba(0, 175, 206, 0.699);
+    font-size: 100px;
+    margin: 10px;
+    width: 70px;
+    height: 35px;
+    border-radius: 50px;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.589);
+}

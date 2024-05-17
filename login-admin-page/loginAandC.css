@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(#38B8C0 50%, rgb(39, 39, 39));
+    height: 650px;
+}
+.menu{
+    float: right;
+}
+.LOGO{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 70px;
+}
+.Center{
+    text-align: center;
+    margin-top: 100px;
+}
+.Username{
+    border-radius: 30px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+}
+.Password{
+    border-radius: 30px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+}
+.log-in-button{
+    border-radius: 30px;
+    background-color: #03E2F0;
+    border-color: black;
+    border-style: solid;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+}
+.Request{
+    border-radius: 30px;
+    background-color: white;
+    border-color: #03E2F0;
+    border-style: solid;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+}.Request a{
+    text-decoration: none;
+    color: #000;
+}
+.Request:hover{
+    background-color: rgba(0, 0, 0, 0.308);
+}
+.first-back{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.first-back a{
+    text-decoration: none;
+    color: #000;
+}

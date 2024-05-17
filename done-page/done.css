@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(#38B8C0 50%, white);
+    height: 650px;
+    
+}
+.menu{
+    float: right;
+}
+.LOGO{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 70px;
+}
+.Center{
+    text-align: center;
+    margin-top: 100px;
+    filter: blur(5px);
+    pointer-events: none;
+}
+.Username{
+    border-radius: 30px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+}
+.Password{
+    border-radius: 30px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+}
+.log-in-button{
+    border-radius: 30px;
+    background-color: #03E2F0;
+    border-color: black;
+    border-style: solid;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+}
+.Request{
+    border-radius: 30px;
+    background-color: white;
+    border-color: #03E2F0;
+    border-style: solid;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+    filter: blur(5px);
+    pointer-events: none;
+}
+.Container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+    width: 360px;
+    height: 210px;
+    margin: auto;
+    margin-top: -330px;
+    z-index: 1;
+    position: relative;
+    border-radius: 10px;
+    opacity: 100%;
+}
+.xBack{
+    width: 50px;
+    height: auto;
+    margin-left: 290px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: bolder;
+    font-size: large;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.xBack a{
+    text-decoration: none;
+    color: #000;
+}
+.Done-button{
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    text-align: center;
+}
+.Done-button a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+.Done-button:hover{
+    background-color: #38B8C0;
+}
+.Requestp{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.first-back{
+    margin-top: 10px;
+    margin-left: 10px;
+    filter: blur(5px);
+    pointer-events: none;
+}
+.first-back a{
+    text-decoration: none;
+    color: #000;
+}
+.CHECKPIC{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 110px;
+    margin-left: 150px;
+    text-align: center;
+    position: fixed;
+    
+}
+.menu{
+    float: right;
+    margin-right: 25px;
+    margin-top: 20px;
+    list-style-type: none;
+    justify-content: center;
+}
+.item {
+    padding: 10px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: rgb(192, 216, 236);
+
+}
+.menu li a{
+    display: block;
+}
+.item a{
+    text-decoration: none;
+    color: #000;
+}
+.toggle{
+    order: 1;
+    font-size: 20px;
+    filter: blur(5px);
+    pointer-events: none;
+}
+.item{
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+    background-color: white;
+}
+.active .item{
+    display: block;
+    padding-top: 30px;
+}
+.toggle a{
+    color: #000;
+}
+.active .toggle{
+    background-color: white;
+    float: right;
+
+}
+

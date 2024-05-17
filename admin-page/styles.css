@@ -1,0 +1,441 @@
+*{
+    padding: 0px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* NAV TOP */
+.nav-top{
+    background-color: #38B8C0;
+    width: 100%;
+    height: 94px;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+}
+.cict {
+    padding: 8px;
+    width: 200px;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+img.logo {
+    border-radius: 50%;
+    width: 93px;
+    height: 93px;
+    padding: 7px;
+    margin-left: 10px;
+}
+
+.welcome {
+    margin: auto;
+    margin-left: 310px;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    
+}
+
+.logout-btn {
+    position: absolute;
+    margin-top: 30px;
+    padding: 15px ;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+    border-color: rgb(177, 177, 177);
+    margin-left: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    margin-top: 30px;
+    height: 40px;
+    width: 40px;
+    border-radius: 9px;
+    margin-left: 30px;
+    border-style: solid;
+    border-width: 1px;
+    
+}
+.profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    
+}
+
+.profile i {
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+
+
+
+/* FILTERING */
+.filtering {
+    height: 170px;
+    margin-top: 90px;
+    background-color: #b1c1eb8e;
+    
+    /* background-color: rgba(155, 206, 250, 0.575); */
+}
+
+.dropdowns {
+    margin: auto;
+    width: 90%;
+    display: flex;
+
+    /* background-color: pink; */
+}
+
+.dropdown {
+    margin: 10px;
+    margin-top: 20px;
+    width: 20%;
+    /* background-color: pink; */
+}
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+
+.dropdown-container {
+    display: none;
+    margin-top: 72px;
+    z-index: 1;
+}
+
+.dropdown.dropdown-container {
+    background-color: #38B8C0;
+}
+/* 
+.dropdown-container a{
+    margin: 4px;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #f3f6ffc0;
+    text-decoration: none;
+    font-size: 12px;
+    color: #000000;
+    display: block;
+    border: none;
+    width: 180px;
+    margin-left: -208px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;  
+}
+
+.dropdown-container a:hover {
+    background-color: #f1f1f1;
+    width: 190px;
+    margin-left: -214px;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.24);
+    
+}
+
+.dropdown-container:active {
+    margin-right: 10px;    
+} */
+
+/* .filtering a:hover, .dropdown-btn:hover {
+    color: #000000;
+    
+}
+
+.dropdown-btn {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    height: 40px;
+    width: 200px;
+    border-width: 1px;
+    border-radius: 3px;
+    box-shadow: 3px 4px rgba(128, 128, 128, 0.178);
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: rgba(179, 179, 179, 0.705);
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    
+} */
+
+
+/* .active {
+   background-color: rgba(87, 87, 87, 0.89);
+   color: aliceblue;
+   width: 210px;
+   margin-right: 14px;
+} */
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* .custom-select select {
+    display: none; /*hide original SELECT element:
+} */
+  
+.dropdown select {
+    display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+   background-color: #a5a3a3;
+   color: black;
+   padding-left: 20px;
+   margin: 7px;
+   /* height: 50px; */
+   width: 95%;
+   border-width: 1px;
+   border-radius: 3px;
+   box-shadow: 3px 4px rgba(128, 128, 128, 0.178);
+   cursor: pointer;
+   font-weight: 600;
+   background-color: rgba(179, 179, 179, 0.705);
+   color: rgb(0, 0, 0);
+   font-size: 12px;
+   text-align: center;
+ }
+
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div  {
+    color: #000000;
+    padding: 8px 16px;
+    border: none;
+    /* border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .select-selected{
+    color: #000000;
+    padding: 8px 16px;
+    border: 1px solid black;
+    /* border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+    cursor: pointer;
+    user-select: none;
+  }
+
+
+  
+  /*style items (options):*/
+.select-items {
+   margin: 4px;
+   padding: 6px;
+   border-radius: 4px;
+   background-color: #c5c5c5ea;
+   text-decoration: none;
+   font-size: 12px;
+   color: #ffffff;
+   display: block;
+   border: none;
+   width: 85%;
+   margin-left: 12px;
+   text-align: center;
+   cursor: pointer;
+   outline: none;
+
+
+   /* position: absolute; */
+   /* background-color: DodgerBlue; */
+   top: 100%;
+   left: 0;
+   right: 0;
+   z-index: 99;
+}
+  
+  /*hide the items when the select box is closed:*/
+.select-hide {
+   display: none;
+ }
+
+
+.select-items div:hover, .same-as-selected {
+  /* background-color: rgba(0, 0, 0, 0.1); */
+   background-color: rgba(240, 248, 255, 0.712);
+   border-radius: 5px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+.filtering-studID{
+    margin-top: -100px;
+}
+
+  .studentID-input {
+    
+    display: flex;
+    width: 300px;
+    margin: auto;
+    margin-top: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    /* background-color: #b3c6ff4b; */
+    text-decoration: none;
+    font-size: 12px;
+    color: #000000;
+    border: none;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    
+  }
+
+.searchBar {
+    margin: 4px;
+    padding: 6px;
+    border-radius: 12px;
+    height: 40px;
+    background-color: #f3f6ff9c;
+    text-decoration: none;
+    font-size: 12px;
+    color: #000000;
+    border: none;
+    width: 210px;
+    text-align: left;
+    cursor: pointer;
+    border: 2px solid gray;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.24);  
+ }
+  
+.searchButton {
+    margin: auto;
+    margin-left: 10px;
+    padding: 6px;
+    border-radius: 32px;
+    background-color: #9fb9ff;
+    text-decoration: none;
+    font-size: 20px;
+    color: #070707;
+    border: none;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid gray;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.24);  
+}
+
+.searchButton:hover {
+    width: 104px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 21px;
+    background-color: rgba(173, 173, 255, 0.863);
+    font-weight: 400;
+}
+
+/**ACADEMIC EVALUATION**/
+.records {
+    background-color: rgba(185, 184, 174, 0.438);
+    padding: 20px;
+    margin-left: -90px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 1300px;
+    border-radius: 15px;
+    box-shadow: 4px 6px rgba(128, 128, 128, 0.404);
+}
+
+.ae {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+tr {
+    font-size: 16px;
+}
+
+h2 {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.midterm, .final {
+    margin: 10px;;
+    background-color: rgba(219, 230, 231, 0.733);
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    box-shadow: 3px 4px rgba(128, 128, 128, 0.178);
+}
+
+table{
+    margin: auto;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid rgba(128, 128, 128, 0.582);
+    padding: 10px;
+}
+
+th{
+    background-color: rgba(187, 197, 204, 0.884); 
+}
+
+tr {
+    background-color: rgba(177, 181, 192, 0.267);
+}
+tr:hover, td:hover {
+    background-color: rgba(240, 248, 255, 0.747);
+}
+
+th.grade {
+    background-color: rgb(168, 168, 247);
+}

@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(#38B8C0 50%, white);
+    height: 650px;
+}
+.LOGO{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 70px;
+}
+.Center{
+    text-align: center;
+    margin-top: 100px;
+}
+.faculty-button{
+    border-radius: 30px;
+    background-color: #03E2F0;
+    border-color: black;
+    border-style: solid;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+    font-size: 20px;
+}
+.faculty-button a{
+    text-decoration: none;
+    color: #000;
+}
+.faculty-button:hover{
+    background-color: rgba(0, 0, 0, 0.308);
+    transform: scale(1.1);
+}
+.student-button{
+    border-radius: 30px;
+    border-color: black;
+    border-style: solid;
+    font-weight: bold;
+    margin: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.student-button a{
+    text-decoration: none;
+    color: #000;
+}
+.student-button:hover{
+    background-color: rgba(0, 0, 0, 0.308);
+    transform: scale(1.1);
+}
+.SystName{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 15px;
+    color: white;
+    text-shadow: 3px 3px 2px #000;
+}
+.menu{
+    float: right;
+    margin-right: 25px;
+    margin-top: -20px;
+    list-style-type: none;
+    justify-content: center;
+}
+.item {
+    padding: 10px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: rgb(2, 102, 184);
+    transform: scale(1.1);
+}
+.menu li a{
+    display: block;
+}
+.item a{
+    text-decoration: none;
+    color: #000;
+}
+.toggle{
+    order: 1;
+    font-size: 20px;
+}
+.item{
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+    background-color: white;
+}
+.active .item{
+    display: block;
+    padding-top: 30px;
+}
+.toggle a{
+    color: #000;
+}
+.active .toggle{
+    background-color: white;
+    float: right;
+}
+
+/* @media (min-width: 769px) {
+    
+    .menu {
+       align-items: flex-start;
+       flex-wrap: nowrap;
+       background: none;
+    }
+    .item{
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+     }
+     .toggle{
+        display: none;
+     }
+} */

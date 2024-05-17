@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav-top">
+        <img class="logo" src="CICT LOGO.jpg" alt="CICT logo">
+        <h3 class="cict">COLLEGE OF INFORMATION AND COMMUNICATIONS TECHNOLOGY</h3>
+        <button class="logout-btn">Logout</button>
+        <button class="profile"><i class="glyphicon glyphicon-user"></i></button>
+        
+    </div>
+    <div class="sidebar-container">
+        <div class="sidebar">
+            <div class="profilepic-container">
+                <img src="profile-user-icon.jpg" alt="profile-user-icon">
+            </div>
+            <h1 class="profile-username">DELA ROSA, JUAN</h1>
+            <div class="scrollable-nav">
+    
+                <div class="sy">
+                    <button class="dropdown-btn">2022 - 2023
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">BSINFOTECH - 2E (2nd Sem)</a>
+                        <a href="#">BSINFOTECH - 2E (1st Sem)</a>
+                        <a href="#">BSCS - 3D (1st Sem)</a>
+                    </div>
+                </div>
+    
+                <div class="sy">
+                    <button class="dropdown-btn">2023 - 2024
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">BSINFOTECH - 2E (2nd Sem)</a>
+                        <a href="#">BSINFOTECH - 2E (1st Sem)</a>
+                        <a href="#">BSCS - 3D (1st Sem)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="addclass-trash">
+                <a class="addclass" href="add-class.html">Add Class +</a>
+                <a href="#">
+                   <span class="glyphicon glyphicon-trash"></span>  
+                </a>
+         
+            </div>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <p>Course: <span>Bachelor of Science in Information Technology</span></p>
+        <p>Subject: <span>CC105 Information Management</span></p>
+        <p>Semester: <span>2nd Semester</span></p>
+    </div>
+    <div class="container">
+        <div class="container2">
+            <form class="addclasss">
+                <label for="SY">School Year:</label><br>
+                <input type="text" id="SY" name="SY"><br>
+        
+                <label for="course">Course:</label><br>
+                <input type="text" id="course" name="course"><br>
+        
+                <label for="yl&block">Year Level and Section:</label><br>
+                <input type="text" id="yl&block" name="yl&block"><br>
+        
+                <label for="semester">Semester:</label><br>
+                <input type="text" id="SY" name="semester"><br>
+        
+                <label for="subjcode">Subject Code:</label><br>
+                <input type="text" id="SY" name="subjcode"><br>
+        
+                <label for="subjname">Subject Name:</label><br>
+                <input type="text" id="SY" name="subjname"><br>
+        
+                <a href="../faculty-page/faculty_page.html"><button type="submit" class="pindot">Add Class</button></a>
+            </form>
+        </div>
+        <div class="academic-evaluation">
+            <h1 class="ae">Academic Evaluation</h1>
+
+            <div class="customization-btn">
+                <button class="button archive"><i class="fa fa-archive">Archive</i></button>
+                <button class="button save">Save</button>
+                <button class="button add ">Add +</button>
+                <button class="button edit">Edit</button>
+                <button class="button delete">Delete -</button>
+            </div>
+
+                
+
+            <div class="final-grade">
+                <table class="tbl">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Student ID</th>
+                            <th>Course</th>
+                            <th>Final Grade</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dela Cruz, Juan</td>
+                            <td>2022-20222</td>
+                            <td>Block E</td>
+                            <td>1.3</td>
+                            <td>Passed</td>
+                        </tr> 
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
